@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="bannerTitle">
   <title id="bannerTitle">CIRCLE — Cyber Research &amp; Development</title>
   <style>
-    /* Animations en amélioration progressive : le rendu statique reste complet sans elles. */
+    /* Animations en amélioration progressive : certains rendus (proxy d'images, aperçus) les ignorent,
+       le visuel statique reste alors complet et intentionnel. */
     @keyframes circle-scan { from { transform: translateY(0); } to { transform: translateY(450px); } }
     @keyframes circle-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
     @keyframes circle-caret { 0%, 45% { opacity: 1; } 50%, 95% { opacity: 0; } 100% { opacity: 1; } }
@@ -32,6 +33,11 @@
       <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/>
       <stop offset="25%" stop-color="#2dd4bf" stop-opacity="0.9"/>
       <stop offset="70%" stop-color="#6366f1" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="ruleV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#2dd4bf" stop-opacity="0.95"/>
       <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
@@ -71,7 +77,7 @@
   </g>
 
   <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
-    <rect x="352" y="96" width="3" height="150" fill="url(#rule)"/>
+    <rect x="352" y="96" width="3" height="150" fill="url(#ruleV)"/>
     <text x="384" y="118" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="17" letter-spacing="5.5" fill="#5ee9d0">CYBER RESEARCH &amp; DEVELOPMENT</text>
     <text x="380" y="202" font-size="88" font-weight="700" letter-spacing="13" fill="#ffffff">CIRCLE</text>
     <text x="384" y="242" font-size="23" fill="#9fb3c8">Défensive · Offensive · Infrastructure · Open source</text>
