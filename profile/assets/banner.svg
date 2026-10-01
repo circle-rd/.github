@@ -53,12 +53,12 @@
     <g fill="none" stroke="url(#logoGrad)" stroke-linecap="butt" filter="url(#soft)" opacity="0.55">
       <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
     </g>
-    <g fill="none" stroke="url(#logoGrad)" stroke-linecap="butt">
+    <g fill="none" stroke="#ffffff" stroke-linecap="butt">
       <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
-      <path d="M 332.5 406.54 A 205 205 0 0 0 411 325.24" stroke-width="7" opacity="0.85"/>
-      <path d="M 314.17 401.57 A 192 192 0 0 0 396.28 325" stroke-width="5" opacity="0.7"/>
-      <path d="M 302.4 391.61 A 178 178 0 0 0 377.57 328.54" stroke-width="4" opacity="0.55"/>
-      <path d="M 373.86 388.78 A 215 215 0 0 0 426.41 316.45" stroke-width="3" opacity="0.4"/>
+      <path d="M 332.5 406.54 A 205 205 0 0 0 411 325.24" stroke-width="8" opacity="0.95"/>
+      <path d="M 314.17 401.57 A 192 192 0 0 0 396.28 325" stroke-width="6" opacity="0.9"/>
+      <path d="M 302.4 391.61 A 178 178 0 0 0 377.57 328.54" stroke-width="5" opacity="0.8"/>
+      <path d="M 373.86 388.78 A 215 215 0 0 0 426.41 316.45" stroke-width="4" opacity="0.7"/>
     </g>
     <circle cx="230" cy="229" r="222" fill="none" stroke="#5ee9d0" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="18 26">
       <animateTransform attributeName="transform" type="rotate" from="0 230 229" to="360 230 229" dur="26s" repeatCount="indefinite"/>
