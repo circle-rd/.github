@@ -62,6 +62,7 @@
     <rect class="scanline" x="0" y="-90" width="1200" height="90" fill="url(#scan)"/>
   </g>
 
+  <!-- Logo CIRCLE : géométrie dupliquée depuis logo.svg (les deux fichiers doivent rester synchronisés). -->
   <g transform="translate(78,70) scale(0.478)">
     <g fill="none" stroke="url(#logoGrad)" stroke-linecap="butt" filter="url(#soft)" opacity="0.55">
       <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
