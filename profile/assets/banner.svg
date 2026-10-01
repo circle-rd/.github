@@ -44,7 +44,7 @@
   <ellipse cx="1020" cy="300" rx="460" ry="300" fill="url(#glowIndigo)"/>
 
   <g opacity="0.5">
-    <rect x="0" y="0" width="1200" height="90" fill="url(#scan)">
+    <rect x="0" y="-90" width="1200" height="90" fill="url(#scan)">
       <animate attributeName="y" values="-90;360" dur="7s" repeatCount="indefinite"/>
     </rect>
   </g>
@@ -73,9 +73,7 @@
   </g>
 
   <g font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" fill="#64809b">
-    <text x="384" y="296">&gt; outils, recherche et publications en sécurité<tspan fill="#5ee9d0">_</tspan>
-      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" repeatCount="indefinite"/>
-    </text>
+    <text x="384" y="296">&gt; outils, recherche et publications en sécurité<tspan fill="#5ee9d0">_<animate attributeName="opacity" values="1;0;1" dur="1.8s" repeatCount="indefinite"/></tspan></text>
   </g>
 
   <rect x="0" y="356" width="1200" height="4" fill="url(#rule)"/>
