@@ -1,5 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="CIRCLE - Cyber Research &amp; Development">
-  <title>CIRCLE — Cyber Research &amp; Development</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-labelledby="bannerTitle">
+  <title id="bannerTitle">CIRCLE — Cyber Research &amp; Development</title>
+  <style>
+    /* Animations en amélioration progressive : le rendu statique reste complet sans elles. */
+    @keyframes circle-scan { from { transform: translateY(0); } to { transform: translateY(450px); } }
+    @keyframes circle-orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes circle-caret { 0%, 45% { opacity: 1; } 50%, 95% { opacity: 0; } 100% { opacity: 1; } }
+    .scanline { animation: circle-scan 7s linear infinite; }
+    .orbit { transform-origin: 230px 229px; animation: circle-orbit 26s linear infinite; }
+    .caret { animation: circle-caret 1.8s steps(1, end) infinite; }
+  </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#05080c"/>
@@ -44,9 +53,7 @@
   <ellipse cx="1020" cy="300" rx="460" ry="300" fill="url(#glowIndigo)"/>
 
   <g opacity="0.5">
-    <rect x="0" y="-90" width="1200" height="90" fill="url(#scan)">
-      <animate attributeName="y" values="-90;360" dur="7s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="scanline" x="0" y="-90" width="1200" height="90" fill="url(#scan)"/>
   </g>
 
   <g transform="translate(78,70) scale(0.478)">
@@ -60,9 +67,7 @@
       <path d="M 302.4 391.61 A 178 178 0 0 0 377.57 328.54" stroke-width="5" opacity="0.8"/>
       <path d="M 373.86 388.78 A 215 215 0 0 0 426.41 316.45" stroke-width="4" opacity="0.7"/>
     </g>
-    <circle cx="230" cy="229" r="222" fill="none" stroke="#5ee9d0" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="18 26">
-      <animateTransform attributeName="transform" type="rotate" from="0 230 229" to="360 230 229" dur="26s" repeatCount="indefinite"/>
-    </circle>
+    <circle class="orbit" cx="230" cy="229" r="222" fill="none" stroke="#5ee9d0" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="18 26"/>
   </g>
 
   <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
@@ -73,7 +78,7 @@
   </g>
 
   <g font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" fill="#64809b">
-    <text x="384" y="296">&gt; outils, recherche et publications en sécurité<tspan fill="#5ee9d0">_<animate attributeName="opacity" values="1;0;1" dur="1.8s" repeatCount="indefinite"/></tspan></text>
+    <text x="384" y="296">&gt; outils, recherche et publications en sécurité<tspan class="caret" fill="#5ee9d0">_</tspan></text>
   </g>
 
   <rect x="0" y="356" width="1200" height="4" fill="url(#rule)"/>
