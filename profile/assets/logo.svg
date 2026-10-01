@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 460" width="460" height="460" role="img" aria-label="CIRCLE logo">
+  <title>CIRCLE</title>
+  <g fill="none" stroke="#ffffff" stroke-linecap="butt">
+    <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
+    <path d="M 332.5 406.54 A 205 205 0 0 0 411 325.24" stroke-width="8" opacity="0.95"/>
+    <path d="M 314.17 401.57 A 192 192 0 0 0 396.28 325" stroke-width="6" opacity="0.9"/>
+    <path d="M 302.4 391.61 A 178 178 0 0 0 377.57 328.54" stroke-width="5" opacity="0.8"/>
+    <path d="M 373.86 388.78 A 215 215 0 0 0 426.41 316.45" stroke-width="4" opacity="0.7"/>
+  </g>
+</svg>

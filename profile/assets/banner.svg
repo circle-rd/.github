@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="CIRCLE - Cyber Research &amp; Development">
+  <title>CIRCLE — Cyber Research &amp; Development</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#05080c"/>
+      <stop offset="55%" stop-color="#080d14"/>
+      <stop offset="100%" stop-color="#040609"/>
+    </linearGradient>
+    <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#2dd4bf" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowIndigo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#e8fbff"/>
+      <stop offset="100%" stop-color="#5ee9d0"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#2dd4bf" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5ee9d0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5ee9d0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#5ee9d0" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#7dd3fc" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <ellipse cx="180" cy="180" rx="420" ry="320" fill="url(#glowTeal)"/>
+  <ellipse cx="1020" cy="300" rx="460" ry="300" fill="url(#glowIndigo)"/>
+
+  <g opacity="0.5">
+    <rect x="0" y="0" width="1200" height="90" fill="url(#scan)">
+      <animate attributeName="y" values="-90;360" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <g transform="translate(78,70) scale(0.478)">
+    <g fill="none" stroke="url(#logoGrad)" stroke-linecap="butt" filter="url(#soft)" opacity="0.55">
+      <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
+    </g>
+    <g fill="none" stroke="url(#logoGrad)" stroke-linecap="butt">
+      <path d="M 386.23 202.29 A 158.5 158.5 0 1 0 379.5 281.65" stroke-width="69"/>
+      <path d="M 332.5 406.54 A 205 205 0 0 0 411 325.24" stroke-width="7" opacity="0.85"/>
+      <path d="M 314.17 401.57 A 192 192 0 0 0 396.28 325" stroke-width="5" opacity="0.7"/>
+      <path d="M 302.4 391.61 A 178 178 0 0 0 377.57 328.54" stroke-width="4" opacity="0.55"/>
+      <path d="M 373.86 388.78 A 215 215 0 0 0 426.41 316.45" stroke-width="3" opacity="0.4"/>
+    </g>
+    <circle cx="230" cy="229" r="222" fill="none" stroke="#5ee9d0" stroke-opacity="0.45" stroke-width="3" stroke-dasharray="18 26">
+      <animateTransform attributeName="transform" type="rotate" from="0 230 229" to="360 230 229" dur="26s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <rect x="352" y="96" width="3" height="150" fill="url(#rule)"/>
+    <text x="384" y="118" font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="17" letter-spacing="5.5" fill="#5ee9d0">CYBER RESEARCH &amp; DEVELOPMENT</text>
+    <text x="380" y="202" font-size="88" font-weight="700" letter-spacing="13" fill="#ffffff">CIRCLE</text>
+    <text x="384" y="242" font-size="23" fill="#9fb3c8">Défensive · Offensive · Infrastructure · Open source</text>
+  </g>
+
+  <g font-family="'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="15" fill="#64809b">
+    <text x="384" y="296">&gt; outils, recherche et publications en sécurité<tspan fill="#5ee9d0">_</tspan>
+      <animate attributeName="opacity" values="1;0.55;1" dur="3.6s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <rect x="0" y="356" width="1200" height="4" fill="url(#rule)"/>
+</svg>
